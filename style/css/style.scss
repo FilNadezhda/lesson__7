@@ -1,0 +1,71 @@
+@import "./../../style/scss/scss-components/nav";
+@import "./../../style/scss/scss-components/header";
+@import "./../../style/scss/scss-components/main";
+@import "./../../style/scss/scss-components/aside";
+
+* {
+	box-sizing: border-box;
+	}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	}
+
+.wrapper {
+	width: 1280px;
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	}
+
+.wrap {
+	display: flex;
+	flex-flow: column wrap;
+	}
+
+.inner {
+	display: flex;
+	}
+
+header {
+	box-shadow: 0 0 10px #DADADA;
+	}
+
+@media all and (min-width: 768px) and (max-width:1024px) {
+
+	.logo {
+		overflow: hidden;
+		}
+
+	.btn__search {
+		right: 9em;
+		}
+
+	aside {
+		top: 1010px;
+		left: 0;
+		}
+
+	.aside__bar {
+		display: flex;
+		}
+		}
+
+@media all and (max-width: 768px) and (min-width:1024px) {
+	header {
+		width: 100vw;
+		}
+		}
+
+@media all and (min-width:320px) and (max-width:420px) {
+	.logo {
+		overflow: hidden;
+		}
+
+	header {
+		width: 100vw;
+		}
+		}
