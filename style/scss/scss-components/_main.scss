@@ -4,14 +4,14 @@
 	font-weight: bold;
 	color: #767676;
 	padding: 0;
-	}
+}
 
 @mixin tiny__text {
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
 	font-size: calc(8px + 0.2vw);
 	color: #BFBFBF;
-	}
+}
 
 @mixin triangle_violet {
 	position: absolute;
@@ -23,7 +23,7 @@
 	border-right: transparent 2px solid;
 	border-bottom: 5px solid #A889E9;
 	border-left: transparent 2px solid;
-	}
+}
 
 @mixin triangle__red {
 	position: absolute;
@@ -35,7 +35,7 @@
 	border-top: 5px solid #FD5670;
 	border-right: 2px solid transparent;
 	border-left: 2px solid transparent;
-	}
+}
 
 @mixin prog__bar {
 	background-color: #F6F6F6;
@@ -43,35 +43,35 @@
 	border-radius: 10px;
 	box-shadow: 0 1px 5px #F1F1F1 inset;
 	margin: 0.2em;
-	}
+}
 
 .holder {
 	display: flex;
-	}
-
+	flex-direction: column;
+}
 
 .holder__bottom {
 	display: flex;
-	}
+}
 
 //holder__monthly
 .holder__grapfic {
 	box-shadow: 0 0 20px 10px #DADADA;
-	margin: 30px 0 20px 20px;
+	margin: 1em 0 0 5.7em;
 	width: 706px;
 	max-width: 706px;
-	}
+}
 
 .holder__grapfic--title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	}
+}
 
 .main__title {
 	@include main__title;
 	padding: 0 0 0 2em;
-	}
+}
 
 .holder__btn {
 	@include tiny__text;
@@ -79,41 +79,43 @@
 	background: none;
 	padding: 0.6em;
 	cursor: pointer;
-	}
 
-.holder__btn:hover {
+&:hover {
 	background: -webkit-gradient(linear, left bottom, left top, from(#fd5272), to(#FA7459));
 	background: linear-gradient(0deg, #fd5272, #FA7459);
 	color: #ffffff;
 	width: 68px;
 	height: 30px;
 	border-radius: 20px;
-	}
+}
+}
 
 .grapfic {
-	background: url("./../../img/main/grapfic.png") 50px 5px no-repeat;
+	background: url("./../../img/main/grapfic.png") 80px 5px no-repeat;
 	background-size: contain;
-	}
+
+}
 
 .month {
 	display: flex;
 	@include tiny__text;
+	margin-left: 35px;
 
 	.month__item {
-		padding: 0 2px 0 25px;
+		padding-left: 30px ;
 		list-style: none;
-		}
-		}
+	}
+}
 
 .number {
 	@include tiny__text;
-	padding: 0 50px 0 20px;
+	padding: 0 70px 0 20px;
 
 	.number__item {
 		padding: 0 50px 20px 10px;
 		list-style: none;
-		}
-		}
+	}
+}
 
 /*==========holder__revenue=================*/
 .holder__revenue {
@@ -121,12 +123,12 @@
 	max-width: 266px;
 	width: 266px;
 	text-align: center;
-	margin: 30px 0 20px 20px;
-	}
+	margin: 1.1em 1.1em 0 1.1em;
+}
 
 .holder__title {
 	@include main__title;
-	}
+}
 
 .circle {
 	background: url("./../../img/main/circle.png") center no-repeat;
@@ -134,8 +136,7 @@
 	width: 130px;
 	height: 130px;
 	margin-left: 4em;
-	}
-
+}
 
 .daily__number {
 	position: relative;
@@ -144,7 +145,7 @@
 	.daily__number::before {
 		@include triangle_violet;
 	}
-	}
+}
 
 .daily__number--two {
 	position: relative;
@@ -154,37 +155,37 @@
 	.daily__number--two::before {
 		@include triangle__red;
 	}
-	}
+}
 
 //holder__customer
 .holder__customer {
 	box-shadow: 0 0 20px 10px #DADADA;
 	width: 467px;
 	max-width: 467px;
-	margin: 5px 20px 0 20px;
-	}
+	margin: 1.6em 1.1em 0 5.7em;
+}
 
 .customer__title {
 	@include main__title;
-	padding-left: 30px;
-	}
+	padding: 0.8em 0 0 2em;
+}
 
 .customer__top--text {
 	display: flex;
-	}
+}
 
 .customer__center {
 	margin-left: 7em;
-	}
+}
 
 .customer__top {
 	display: flex;
 	padding-left: 30px;
-	}
+}
 
 .task__list {
 	display: flex;
-	}
+}
 
 .title {
 	background: linear-gradient(to top, #FD5372, #FC755B);
@@ -192,13 +193,13 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	}
+}
 
 .customer__girl {
 	width: 43px;
 	height: 43px;
 	margin: 1em 1em 0 0;
-	}
+}
 
 .customer__girls {
 	width: 43px;
@@ -214,51 +215,51 @@ textarea {
 	border: 1px solid #F1F1F1;
 	overflow: hidden;
 	padding: 5px;
-	}
+}
 
 /*TASK
 ================*/
 .holder__task {
 	box-shadow: 0 0 20px 10px #DADADA;
-	margin-bottom: 15px;
-	}
+	margin: 1.6em 0;
+}
 
 .task__list {
 	display: flex;
 	flex-direction: column;
-	}
+}
 
 .holder__check {
 	display: flex;
 	padding-right: 15px;
-	}
+}
 
 .title__task {
 	@include main__title;
-	padding: 20px 0 0 30px;
-	}
+	padding: 1.8em 0 0 1.5em;
+}
 
 .task__item {
 	@include tiny__text;
 	list-style-type: none;
 	padding-bottom: 3em;
-	}
+}
 
 .task__item--time:before {
 	content: url('./../../../img/main/clock.png');
 	background-size: contain;
-	}
+}
 
 .task__item--text {
 	font-size: calc(7px + 0.3vw);
 	color: #fd5272;
 	padding-bottom: 3em;
-	}
+}
 
 /*=====Section__end======*/
 .section__end {
 	display: flex;
-	}
+}
 
 /*======section__progress======*/
 .section__progress {
@@ -269,15 +270,16 @@ textarea {
 	align-items: center;
 	justify-content: space-around;
 	padding: 2em;
-	}
+	margin: 1.1em 0 0 0;
+}
 
 .progress__titele {
 	@include main__title;
-	}
+}
 
 .main__progress {
 	display: flex;
-	}
+}
 
 /*bar__medium
 =========================*/
@@ -289,7 +291,7 @@ textarea {
 	box-shadow: 0 1px 5px #F1F1F1 inset;
 	margin: 0.2em;
 	position: relative;
-	
+
 	.progress__medium {
 		display: inline-block;
 		width: 11px;
@@ -298,8 +300,8 @@ textarea {
 		background: linear-gradient(45deg, #7089E5, #834FBA);
 		position: absolute;
 		top: 48px;
-		}
-		}
+	}
+}
 
 /*bar__tiny
 ===========================*/
@@ -320,8 +322,8 @@ textarea {
 		background: linear-gradient(45deg, #7089E5, #834FBA);
 		position: absolute;
 		top: 58px;
-		}
-		}
+	}
+}
 
 /*bar__big
 =========================*/
@@ -342,15 +344,15 @@ textarea {
 		background: linear-gradient(45deg, #7089E5, #834FBA);
 		position: absolute;
 		top: 28px;
-		}
-		}
+	}
+}
 
 .progress__number {
 	color: #834FBA;
 	font-size: calc(10px + 0.9vw);
 	font-weight: bold;
 	padding: 11px;
-	}
+}
 
 /*======section__shipments====*/
 .section__shipments {
@@ -359,33 +361,35 @@ textarea {
 	flex-direction: column;
 	align-items: center;
 	width: 245px;
-	margin-left: 15px;
-	}
+	margin: 1.1em 0 0 1.1em;
+}
 
 .section__map {
 	background: url("./../../img/main/map.png")center no-repeat;
 	width: 80%;
 	height: 80%;
-	}
+}
 
 .shipments__title {
 	@include main__title;
 	padding-top: 25px;
-	}
+}
 
 .daily__number {
-	position: relative;@include tiny__text;
-.daily__number::before {
+	position: relative;
+	@include tiny__text;
+
+	.daily__number::before {
 		@include triangle_violet;
-		}
-		}
+	}
+}
 
 .daily__number--two {
 	position: relative;
 	margin-left: 15px;
 	@include tiny__text;
-	}
+}
 
 .daily__number--two::before {
 	@include triangle__red;
-	}
+}
